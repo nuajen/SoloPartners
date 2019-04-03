@@ -12,4 +12,24 @@
  *
  *= require_tree .
  *= require_self
+ *= require fullcalendar/dist/fullcalendar
  */
+
+title {
+    font-family: 'ZCOOL XiaoWei', serif;
+    font-size: 48px;
+   }
+  
+   h1 {
+      font-family: 'ZCOOL XiaoWei', serif;
+      font-size: 48px;
+     }
+  
+  /*    
+     body  {
+      background-image: url("background_calendar.jpg");
+      background-size: cover;
+      background-opacity: 0.4;
+  
+       } */
+  
