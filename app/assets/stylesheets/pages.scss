@@ -1,15 +1,44 @@
 // Place all the styles related to the pages controller here.
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
-html{
-    background-image: url("background_calendar.jpg");
-    margin: 0;
-    padding: 0;
-    border: 0;
-    background-size: 100%;
-    background-repeat: no-repeat;
-}
-title {
+
+
+
+// #main {
+//     position: relative;
+//     width: 100%;
+//     height: 800px; 
+//     color: blue;
+    
+//   }
+//   #main:after {
+//       content : "";
+//       display: block;
+//       position: absolute;
+//       top: 0;
+//       left: 0;
+//       background-image: transparent url("background_calendar.jpg") no-repeat left top; 
+//       background-size: cover;
+//       width: 100%;
+//       height: 100%;
+//       opacity : 0.2;
+//       z-index: -1;
+//   }
+//   #main h1{
+//     color: red;
+//   }
+
+   html{
+      background-image: url("background_calendar.jpg");
+      margin: 0;
+      padding: 0;
+      border: 0;
+      background-size: 100%;
+      background-repeat: no-repeat;    
+   }
+
+
+ title {
     font-family: 'ZCOOL XiaoWei', serif;
     font-size: 48px;
    }
@@ -19,3 +48,4 @@ title {
       font-size: 48px;
      }
 
+    
