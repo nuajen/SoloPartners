@@ -9,6 +9,10 @@ gem 'rails', '~> 5.2.2', '>= 5.2.2.1'
 gem 'sqlite3', '~> 1.3.6'
 gem 'jquery-rails', '~> 4.3', '>= 4.3.3'
 gem 'faker'
+gem 'devise'
+gem 'activeadmin'
+gem 'active_admin_flat_skin', '~>0.1.2'
+gem 'bcrypt', '~> 3.1.7'
 # Use Puma as the app server
 gem 'puma', '~> 3.11'
 # Use SCSS for stylesheets
