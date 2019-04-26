@@ -24,6 +24,6 @@ Actividades Nocturnas: bar crawling, salidas grupales, paseos temáticos (evento
 
 En los perfiles, los usuarios presentan en una pequeña reseña, lo que les interesaría hacer en el tiempo que estarán en la ciudad. Para organizar rápidamente y de forma amigable,  realizar actividades en grupo en que les falten partners.
 
-- Link a Draw: https://www.draw.io/#G1RHGwatS0ZFUOJjycTD2cEGC7ri8mZ_mW
+- Link a Draw: https://www.draw.io/#Hnuajen%2FSoloPartners%2Fmaster%2FProyecto%20Final_.drawio
 
 - Link a Trello: https://trello.com/b/lK7jLWJi/proyecto-final-travelshare
