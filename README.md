@@ -26,4 +26,4 @@ En los perfiles, los usuarios presentan en una pequeña reseña, lo que les inte
 
 - Link a Draw: https://www.draw.io/#Hnuajen%2FSoloPartners%2Fmaster%2FProyecto%20Final_.drawio
 
-- Link a Trello: https://trello.com/b/lK7jLWJi/proyecto-final-travelshare
+- Link a Trello: https://trello.com/b/lK7jLWJi/proyecto-final-solopartner
