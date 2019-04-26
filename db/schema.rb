@@ -10,15 +10,18 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2019_04_16_231031) do
+ActiveRecord::Schema.define(version: 2019_04_24_011135) do
+
+  # These are extensions that must be enabled in order to support this database
+  enable_extension "plpgsql"
 
   create_table "active_admin_comments", force: :cascade do |t|
     t.string "namespace"
     t.text "body"
     t.string "resource_type"
-    t.integer "resource_id"
+    t.bigint "resource_id"
     t.string "author_type"
-    t.integer "author_id"
+    t.bigint "author_id"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
     t.index ["author_type", "author_id"], name: "index_active_admin_comments_on_author_type_and_author_id"
@@ -38,11 +41,43 @@ ActiveRecord::Schema.define(version: 2019_04_16_231031) do
     t.index ["reset_password_token"], name: "index_admin_users_on_reset_password_token", unique: true
   end
 
+  create_table "categories", force: :cascade do |t|
+    t.string "name"
+  end
+
   create_table "events", force: :cascade do |t|
     t.string "title"
     t.datetime "start"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
+  end
+
+  create_table "interests", force: :cascade do |t|
+    t.bigint "subcategory_id"
+    t.bigint "user_id"
+    t.index ["subcategory_id"], name: "index_interests_on_subcategory_id"
+    t.index ["user_id"], name: "index_interests_on_user_id"
+  end
+
+  create_table "matches", force: :cascade do |t|
+    t.bigint "user_id"
+    t.bigint "place_id"
+    t.index ["place_id"], name: "index_matches_on_place_id"
+    t.index ["user_id"], name: "index_matches_on_user_id"
+  end
+
+  create_table "messages", force: :cascade do |t|
+    t.bigint "user_id"
+    t.index ["user_id"], name: "index_messages_on_user_id"
+  end
+
+  create_table "places", force: :cascade do |t|
+    t.string "country"
+    t.string "city"
+  end
+
+  create_table "subcategories", force: :cascade do |t|
+    t.string "name"
   end
 
   create_table "users", force: :cascade do |t|
@@ -53,8 +88,22 @@ ActiveRecord::Schema.define(version: 2019_04_16_231031) do
     t.datetime "remember_created_at"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
+    t.boolean "admin", default: false
+    t.integer "age"
+    t.integer "lenght_of_stay"
+    t.string "about_me"
+    t.string "name"
+    t.bigint "place_id"
+    t.string "lastname"
     t.index ["email"], name: "index_users_on_email", unique: true
+    t.index ["place_id"], name: "index_users_on_place_id"
     t.index ["reset_password_token"], name: "index_users_on_reset_password_token", unique: true
   end
 
+  add_foreign_key "interests", "subcategories"
+  add_foreign_key "interests", "users"
+  add_foreign_key "matches", "places"
+  add_foreign_key "matches", "users"
+  add_foreign_key "messages", "users"
+  add_foreign_key "users", "places"
 end
