@@ -18,8 +18,8 @@ index do
     column :id
     column :email
     column :created_at
-    column :email_provider do |user|
-        user.email.split('@').last.capitalize 
+    column :mi_columna do
+        'Solopartner nº'
         end
         column :member_since do |user|
             time_ago_in_words(user.created_at)
