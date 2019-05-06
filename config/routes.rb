@@ -7,7 +7,7 @@ Rails.application.routes.draw do
   get 'send' => 'send#contact'
   post 'send' => 'send#create'
   get 'pages/about'
-  devise_for :users
+  devise_for :users, :controllers => { :omniauth_callbacks => "users/omniauth_callbacks" }
   resources :events
   get 'pages/index'
   root 'pages#home'

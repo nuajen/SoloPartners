@@ -18,6 +18,7 @@ gem 'activeadmin'
 gem 'active_admin_flat_skin', '~>0.1.2'
 gem 'cancancan'
 gem 'bcrypt', '~> 3.1.7'
+gem 'omniauth-facebook'
 gem 'bootstrap'
 # Use Puma as the app server
 gem 'puma', '~> 3.11'
