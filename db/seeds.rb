@@ -11,4 +11,3 @@
     10.times do |i|
         User.create(email:"user#{i}@gmail.com", password: '123456')
     end
-

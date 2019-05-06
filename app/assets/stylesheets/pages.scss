@@ -29,7 +29,11 @@
 //   }
 
 
-
+.alert{
+   margin: 0;
+   padding: 0;
+   position: absolute;
+}
 
  title {
     font-family: 'ZCOOL XiaoWei', serif;
@@ -42,4 +46,28 @@
       text-align: center;
      }
 
-    
+   h3 {
+      font-family: 'ZCOOL XiaoWei', serif;
+      text-align: center;
+       }
+
+    h2 {
+         font-family: 'ZCOOL XiaoWei', serif;
+         text-align: center;
+          }
+
+   body {
+      background-color: lightgray;
+   }
+
+   
+     form {
+      
+      text-align: center;
+      border: 1px solid #ccc;
+      border-radius: 4px;
+      box-shadow: 0 1px 1px rgba(0, 0, 0, 0.075) inset;
+      color: #555555;
+      display: block;
+      
+     }

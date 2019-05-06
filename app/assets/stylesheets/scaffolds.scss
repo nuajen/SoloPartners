@@ -1,3 +1,9 @@
+.alert{
+  margin: 0;
+  padding: 0;
+  position: absolute;
+}
+
 body {
 
   color: #333;
@@ -12,6 +18,8 @@ p, ol, ul, td {
   font-size: 13px;
   line-height: 18px;
 }
+
+
 
 pre {
  
